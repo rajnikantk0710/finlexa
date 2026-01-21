@@ -9,14 +9,22 @@ let SYSTEM_CONFIG = {
 };
 
 // Mock Bookings Database (In-memory)
-// Format: { id, date: 'YYYY-MM-DD', time: '10:00', type: 'online' }
-let bookings = [];
+// Format: { id, date: 'YYYY-MM-DD', time: '10:00', type: 'individual' | 'small_business' | 'large_business', contact: '...' }
+let bookings = [
+    { id: '1', date: new Date().toISOString().split('T')[0], time: '10:00', type: 'individual', contact: 'Ram Kumar (9800000000)' },
+    { id: '2', date: new Date().toISOString().split('T')[0], time: '14:30', type: 'small_business', contact: 'ABC Traders (9841000000)' },
+    { id: '3', date: '2024-07-25', time: '11:00', type: 'large_business', contact: 'XYZ Corp (9851000000)' }
+];
 
 export const getSystemConfig = () => SYSTEM_CONFIG;
 export const updateTeamSize = (size) => { SYSTEM_CONFIG.teamSize = size; };
 
 export const getBookings = (date) => {
     return bookings.filter(b => b.date === date);
+};
+
+export const getAllBookings = () => {
+    return bookings;
 };
 
 export const addBooking = (booking) => {

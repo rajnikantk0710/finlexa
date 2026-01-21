@@ -7,7 +7,7 @@ export default function TaxToolsPage() {
     const [activeTab, setActiveTab] = useState('pit');
 
     return (
-        <div className="container" style={{ padding: '4rem 1rem' }}>
+        <div className="container" style={{ padding: '8rem 1rem 4rem 1rem' }}>
             <h1 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2.5rem', color: 'var(--primary-blue)' }}>
                 Nepal Tax Calculators
             </h1>

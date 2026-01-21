@@ -2,7 +2,7 @@ import BookingWizard from '@/components/Booking/BookingWizard';
 
 export default function ConsultationPage() {
     return (
-        <div className="container" style={{ padding: '4rem 1rem' }}>
+        <div className="container" style={{ padding: '8rem 1rem 4rem 1rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                 <h1 style={{ fontSize: '2.5rem', color: 'var(--primary-blue)', marginBottom: '1rem' }}>
                     Schedule a Consultation

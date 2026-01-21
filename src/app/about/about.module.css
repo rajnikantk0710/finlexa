@@ -1,0 +1,100 @@
+.hero {
+  text-align: center;
+  padding: 8rem 1rem 2rem 1rem; /* Reduced from 4rem */
+}
+
+/* ... title/subtitle/section/categoryHeader same ... */
+
+.missionSection {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0 4rem 0; /* Reduced from 6rem */
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(136, 19, 55, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.card h2 {
+  color: var(--primary-brand);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.card p {
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+.teamSection {
+  padding-bottom: 6rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-brand);
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.teamCard {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.teamCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-cyan);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--gray-200), var(--gray-300));
+  border-radius: 50%;
+  margin: 0 auto 1.5rem auto;
+}
+
+.teamCard h3 {
+  font-size: 1.2rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  color: var(--primary-brand);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

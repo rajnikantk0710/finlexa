@@ -11,15 +11,26 @@ const Footer = () => {
                     <p>The Future of Financial, Legal, and Tax Compliance.</p>
                 </div>
                 <div className={styles.column}>
-                    <h4>Quick Links</h4>
+                    <h4>Company</h4>
                     <ul>
-                         <li><a href="/consultation">Consultation</a></li>
+                         <li><a href="/about">About Us</a></li>
+                         <li><a href="/faq">FAQs</a></li>
+                         <li><a href="/news">News & Insights</a></li>
+                         <li><a href="/docs/privacy">Privacy Policy</a></li>{/* Placeholder */}
+                    </ul>
+                </div>
+                <div className={styles.column}>
+                    <h4>Tools & Services</h4>
+                    <ul>
+                         <li><a href="/services">Services</a></li>
+                         <li><a href="/consultation">Book Consultation</a></li>
                          <li><a href="/tax-tools">Tax Calculator</a></li>
+                         <li><a href="/tax-brackets">Tax Brackets (2081/82)</a></li>
                     </ul>
                 </div>
                 <div className={styles.column}>
                     <h4>Contact</h4>
-                    <p>Birgunj, Nepal</p>
+                    <p>Kathmandu, Nepal</p>
                     <p>support@finlexa.com</p>
                 </div>
             </div>

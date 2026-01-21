@@ -23,8 +23,18 @@ export default function AdminPage() {
     };
 
     return (
-        <div className="container" style={{ padding: '4rem 1rem' }}>
-            <h1 style={{ color: 'var(--primary-blue)', marginBottom: '2rem' }}>Admin Dashboard</h1>
+        <div className="container" style={{ padding: '8rem 1rem 4rem 1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+                <h1 style={{ color: 'var(--primary-blue)', margin: 0 }}>Admin Dashboard</h1>
+                <div style={{ display: 'flex', gap: '1rem' }}>
+                    <a href="/admin/bookings" className="btn btn-secondary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
+                        📅 All Bookings
+                    </a>
+                    <a href="/admin/documents" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1rem' }}>
+                        📂 Document Queue
+                    </a>
+                </div>
+            </div>
             
             <div style={{ background: 'var(--white)', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', marginBottom: '2rem' }}>
                 <h2 style={{ marginBottom: '1rem' }}>Configuration</h2>
@@ -62,12 +72,13 @@ export default function AdminPage() {
                     <p style={{ color: 'var(--gray-600)', fontStyle: 'italic' }}>No bookings for this date.</p>
                 ) : (
                     <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
-                        <thead>
+                            <thead>
                             <tr style={{ background: 'var(--gray-100)', textAlign: 'left' }}>
                                 <th style={{ padding: '0.75rem' }}>Time</th>
                                 <th style={{ padding: '0.75rem' }}>Client</th>
                                 <th style={{ padding: '0.75rem' }}>Type</th>
                                 <th style={{ padding: '0.75rem' }}>Service</th>
+                                <th style={{ padding: '0.75rem' }}>Fee</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -77,6 +88,11 @@ export default function AdminPage() {
                                     <td style={{ padding: '0.75rem' }}>{b.contact}</td>
                                     <td style={{ padding: '0.75rem' }}>{b.type}</td>
                                     <td style={{ padding: '0.75rem' }}>Consultation</td>
+                                    <td style={{ padding: '0.75rem', fontWeight: 'bold' }}>
+                                        {b.type === 'individual' ? 'NPR 199' : 
+                                         b.type === 'small_business' ? 'NPR 499' : 
+                                         b.type === 'large_business' ? 'NPR 999' : '-'}
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>

@@ -2,6 +2,7 @@
     text-align: center;
     color: var(--primary-blue);
     margin-bottom: 1rem;
+    padding-top: 6rem; /* Push content down for fixed navbar */
 }
 
 .subtitle {
