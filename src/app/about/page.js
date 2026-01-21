@@ -36,17 +36,17 @@ export default function AboutPage() {
           <div className={styles.teamCard}>
             <div className={styles.avatar}></div>
             <h3>Rajnikant Kushwaha</h3>
-            <span className={styles.role}>Founder & Lead CA</span>
+            <span className={styles.role}>Founder & Lead FinTech</span>
           </div>
           <div className={styles.teamCard}>
              <div className={styles.avatar}></div>
-            <h3>Aarav Sharma</h3>
-            <span className={styles.role}>Senior Legal Counsel</span>
+            <h3>Ujjwal Kant Kushwaha</h3>
+            <span className={styles.role}>Founding Member - Pursuing CA</span>
           </div>
           <div className={styles.teamCard}>
              <div className={styles.avatar}></div>
-            <h3>Priya Adhikari</h3>
-            <span className={styles.role}>Financial Strategist</span>
+            <h3>Omkant Kushwaha</h3>
+            <span className={styles.role}>Founding Member - Financial Strategist & Account</span>
           </div>
         </div>
       </section>
