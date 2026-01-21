@@ -1,0 +1,83 @@
+.title {
+    text-align: center;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--gray-600);
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.dropzone {
+    border: 2px dashed var(--gray-200);
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    text-align: center;
+    transition: all 0.2s;
+    background: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dragging {
+    border-color: var(--primary-blue);
+    background: #eff6ff;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.dropzone h3 {
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+}
+
+.secureNote {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+.fileList {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.fileList ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.fileItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray-100);
+    align-items: center;
+}
+
+.fileName {
+    font-weight: 500;
+}
+
+.fileSize {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+.status {
+    color: #059669;
+    font-size: 0.9rem;
+    background: #d1fae5;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}

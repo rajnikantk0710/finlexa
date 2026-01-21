@@ -1,0 +1,64 @@
+.navbar {
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-brand); /* Maroon Logo Text */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  font-weight: 500;
+  color: var(--text-main);
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.link:hover {
+  color: var(--primary-brand);
+}
+
+.cta {
+  background-color: var(--primary-brand);
+  color: var(--white) !important;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 6px rgba(136, 19, 55, 0.2);
+  transition: all 0.2s ease;
+}
+
+.cta:hover {
+  background-color: var(--primary-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 10px rgba(136, 19, 55, 0.3);
+  color: var(--white) !important;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; 
+  }
+}

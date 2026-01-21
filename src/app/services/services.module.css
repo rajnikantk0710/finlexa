@@ -1,0 +1,100 @@
+.header {
+    text-align: center;
+    padding: 8rem 1rem 4rem 1rem;
+    background-color: var(--gray-50);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.title {
+    font-size: 3.5rem;
+    color: var(--primary-brand);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 6rem;
+    padding: 0 1rem;
+}
+
+.categoryHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.categoryHeader h2 {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.categoryHeader p {
+    color: var(--primary-brand);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); /* Clean Shadow */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-brand);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: var(--primary-brand);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: var(--text-muted);
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Remove specific financeCard overrides as we are unifying the clean theme */
+
+
+.cta {
+    text-align: center;
+    padding: 4rem 1rem 6rem 1rem;
+    background: var(--gray-100);
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    border: 1px solid var(--gray-200);
+}
+
+.cta h2 {
+    color: var(--primary-brand);
+    margin-bottom: 2rem;
+}

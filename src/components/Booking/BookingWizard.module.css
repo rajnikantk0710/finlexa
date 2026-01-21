@@ -1,0 +1,165 @@
+.wizardWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.stepContainer h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary-brand);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: 2px solid var(--gray-200);
+    border-radius: 8px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: var(--primary-brand);
+}
+
+.selected {
+    border-color: var(--primary-brand);
+    background-color: #fff1f2;
+}
+
+.priceTag {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--primary-brand);
+}
+
+.extraInput {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--gray-100);
+    border-radius: 8px;
+}
+
+.extraInput input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--gray-200);
+}
+
+.feeTotal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-brand);
+    margin-top: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--gray-200);
+    padding-top: 1.5rem;
+}
+
+/* Date Step */
+.dateInput {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+}
+
+.slotsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.slotBtn {
+    padding: 0.8rem;
+    border: 1px solid var(--gray-200);
+    background: var(--white);
+    color: var(--text-main);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.slotBtn:hover:not(:disabled) {
+    border-color: var(--primary-brand);
+    color: var(--primary-brand);
+}
+
+.slotBtn:disabled {
+    border-color: var(--gray-200);
+    color: var(--gray-400);
+    cursor: not-allowed;
+    background: var(--gray-100);
+}
+
+.slotSelected {
+    background: var(--primary-brand) !important;
+    color: var(--white) !important;
+    border-color: var(--primary-brand) !important;
+}
+
+.fullLabel {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--primary-brand);
+}
+
+.debugPanel {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border: 1px dashed var(--gray-600);
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+/* Details Step */
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.formGroup input, .formGroup select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+}
+
+.summaryCard {
+    background: var(--gray-100);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+/* Success */
+.successContainer {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.successIcon {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
