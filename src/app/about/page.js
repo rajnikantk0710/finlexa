@@ -34,17 +34,17 @@ export default function AboutPage() {
         <h2 className={styles.sectionTitle}>Meet Our Experts</h2>
         <div className={styles.grid}>
           <div className={styles.teamCard}>
-            <div className={styles.avatar}></div>
+            <div className={styles.avatar} style={{ backgroundImage: 'url("/images/team/rajnikant.jpg")' }}></div>
             <h3>Rajnikant Kushwaha</h3>
             <span className={styles.role}>Founder & Lead FinTech</span>
           </div>
           <div className={styles.teamCard}>
-             <div className={styles.avatar}></div>
+             <div className={styles.avatar} style={{ backgroundImage: 'url("/images/team/ujjwal.jpg")' }}></div>
             <h3>Ujjwal Kant Kushwaha</h3>
-            <span className={styles.role}>Founding Member - Pursuing Chartered Accountancy</span>
+            <span className={styles.role}>Founding Member - Pursuing CA</span>
           </div>
           <div className={styles.teamCard}>
-             <div className={styles.avatar}></div>
+             <div className={styles.avatar} style={{ backgroundImage: 'url("/images/team/omkant.jpg")' }}></div>
             <h3>Omkant Kushwaha</h3>
             <span className={styles.role}>Founding Member - Financial Strategist & Account</span>
           </div>
