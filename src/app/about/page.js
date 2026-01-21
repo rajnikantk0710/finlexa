@@ -41,7 +41,7 @@ export default function AboutPage() {
           <div className={styles.teamCard}>
              <div className={styles.avatar} style={{ backgroundImage: 'url("/images/team/ujjwal.jpg")' }}></div>
             <h3>Ujjwal Kant Kushwaha</h3>
-            <span className={styles.role}>Founding Member - Pursuing CA</span>
+            <span className={styles.role}>Founding Member - Pursuing CA (Chartered Accountancy)</span>
           </div>
           <div className={styles.teamCard}>
              <div className={styles.avatar} style={{ backgroundImage: 'url("/images/team/omkant.jpg")' }}></div>
